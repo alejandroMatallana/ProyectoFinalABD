@@ -7,6 +7,11 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+/**
+ * Yo estuve aqui haciendo commit
+ * @author Sebastian
+ *
+ */
 @Entity
 @Table(name = "Camas")
 public class Cama implements Serializable{
