@@ -19,7 +19,7 @@ public class Cama implements Serializable{
 	private String descripcion;
 	
 	/**
-	 * True = Desocupada jajaja
+	 * True = Desocupada 
 	 * False = Ocupada
 	 */
 	@Column(name="Estado")
