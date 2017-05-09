@@ -5,11 +5,21 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.NamedQueries;
+import javax.persistence.NamedQuery;
 import javax.persistence.Table;
+
+
 
 @Entity
 @Table(name = "Tipo_Medicamento")
+@NamedQueries({
+	@NamedQuery(name=TipoMedicamento.listar,query="SELECT t FROM TipoMedicamento t")
+})
 public class TipoMedicamento implements Serializable{
+	
+	public static final String listar= "TipoMedicamento.listarMedicamento";
+	
 	@Id
 	@Column(name="Id_Tipo_Medicamento")
 	@GeneratedValue(strategy=GenerationType.IDENTITY)

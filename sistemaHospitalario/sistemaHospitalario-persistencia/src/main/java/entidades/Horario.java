@@ -25,11 +25,11 @@ public class Horario implements Serializable{
 	@Column(name="Dia",nullable = false,length=15)
 	private String dia;
 		
-	@Temporal(TemporalType.DATE)
+	//@Temporal(TemporalType.DATE)
 	@Column(name="Hora_Inicio",nullable = false)
 	private Time horaInicio;
 	
-	@Temporal(TemporalType.DATE)
+	//@Temporal(TemporalType.DATE)
 	@Column(name="Hora_Final",nullable = false)
 	private Time horaFinal;	 // OJO PREGUNTAR SI SE PUEDE USAR LA VARIABLE DE TIPO TIME
 

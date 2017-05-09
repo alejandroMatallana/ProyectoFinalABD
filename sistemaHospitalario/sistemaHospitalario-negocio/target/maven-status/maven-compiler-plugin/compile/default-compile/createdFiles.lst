@@ -1,0 +1,4 @@
+beans\LocalizacionEJB.class
+excepciones\ExcepcionNegocio.class
+beans\EJBGenerico.class
+remote\ILocalizacionRemote.class

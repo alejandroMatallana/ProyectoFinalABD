@@ -28,7 +28,7 @@ public class CitaMedica implements Serializable{
 	@Column(name="Fecha",nullable = false)
 	private Date fecha;
 	
-	@Temporal(TemporalType.DATE)
+	//@Temporal(TemporalType.DATE)
 	@Column(name="Hora",nullable = false)
 	private Time hora; // PREGUNTAR SI DE PUEDE USAR TIME PARA GUARDAR HORAS
 	
