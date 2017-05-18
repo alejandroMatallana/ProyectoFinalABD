@@ -1,15 +1,11 @@
 package Controladores;
-
 import java.io.Serializable;
 import java.util.List;
-
 import javax.annotation.PostConstruct;
 import javax.ejb.EJB;
 import javax.inject.Named;
-
 import org.omnifaces.cdi.ViewScoped;
 import org.omnifaces.util.Messages;
-
 import beans.FarmaciaEJB;
 import entidades.Ciudad;
 import entidades.Farmaceutico;

@@ -16,5 +16,5 @@ public class Medico extends Persona implements Serializable{
 
 	@Column(name="Estado")
 	private boolean estado;
-
+	
 }

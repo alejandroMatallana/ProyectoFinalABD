@@ -1,4 +1,7 @@
 beans\LocalizacionEJB.class
-excepciones\ExcepcionNegocio.class
 beans\EJBGenerico.class
+beans\EPSEJB.class
+excepciones\ExcepcionNegocio.class
+beans\FarmaciaEJB.class
+beans\MedicamentoEJB.class
 remote\ILocalizacionRemote.class
