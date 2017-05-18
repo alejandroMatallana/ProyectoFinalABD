@@ -39,9 +39,9 @@ public class Farmacia implements Serializable{
 	@ManyToOne(cascade={})
 	private Ciudad ciudad;
 	
-//	@JoinColumn(name="Farmaceutico")
-//	@ManyToOne(cascade={})
-//	private Farmaceutico farmaceutico;
+	@JoinColumn(name="Farmaceutico")
+	@ManyToOne(cascade={})
+	private Farmaceutico farmaceutico;
 
 	public Farmacia() {
 		super();
@@ -49,17 +49,19 @@ public class Farmacia implements Serializable{
 	}
 	
 	
-	//Constructor
-
-	public Farmacia(int id, String nombre, String direccion, String telefono, Ciudad ciudad) {
+	
+	public Farmacia(int id, String nombre, String direccion, String telefono, Ciudad ciudad,
+			Farmaceutico farmaceutico) {
 		super();
 		this.id = id;
 		this.nombre = nombre;
 		this.direccion = direccion;
 		this.telefono = telefono;
 		this.ciudad = ciudad;
-		//this.farmaceutico = farmaceutico;
+		this.farmaceutico = farmaceutico;
 	}
+
+
 
 	public int getId() {
 		return id;
@@ -99,6 +101,16 @@ public class Farmacia implements Serializable{
 
 	public void setCiudad(Ciudad ciudad) {
 		this.ciudad = ciudad;
+	}
+
+	public Farmaceutico getFarmaceutico() {
+		return farmaceutico;
+	}
+
+
+
+	public void setFarmaceutico(Farmaceutico farmaceutico) {
+		this.farmaceutico = farmaceutico;
 	}
 
 

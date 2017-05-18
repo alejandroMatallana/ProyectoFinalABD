@@ -15,6 +15,7 @@ import org.omnifaces.util.Messages;
 
 import beans.EPSEJB;
 import entidades.Eps;
+import entidades.Farmaceutico;
 import entidades.TipoEps;
 
 /**
@@ -27,7 +28,7 @@ public class ControladorEPS implements Serializable {
 
 	@EJB
 	private EPSEJB epsEJB;
-
+	
 	private int id;
 	private String nombre;
 	private String direccion;
